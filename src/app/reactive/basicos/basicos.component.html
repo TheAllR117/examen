@@ -1,0 +1,52 @@
+
+
+
+<div class="row align-items-center">
+    <div class="col-sm-3">
+        <form (ngSubmit)="guardar()" autocomplete="off" [formGroup]="miFormulario">
+            <div class="mb-3 row">
+               
+                <div class="col-sm-12">
+                    <label class="col-form-label">Ancho del árbol</label>
+                    <input type="number"
+                           class="form-control"
+                           formControlName="width"
+                          >
+                    <span class="form-text text-danger"
+                          *ngIf="campoEsValido('width')">
+                          El valor debe de ser mayor a 0
+                    </span>
+                </div>
+            </div>
+
+            <div class="mb-3 row">
+                <label class="col-form-label">Nivel del árbol</label>
+                <div class="col-sm-12">
+                    <input type="number"
+                           class="form-control"
+                           formControlName="level"
+                          >
+                    <span class="form-text text-danger"
+                          *ngIf="campoEsValido('level')">
+                        El valor debe de ser mayor a 0
+                    </span>
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div class="col">
+                    <button type="submit"
+                            class="btn btn-primary float-end">
+                        Calcular
+                    </button>
+                </div>
+            </div>
+        </form>
+
+    </div>
+    <div class="col-sm-3 text-center">
+        <label class="col-form-label">Número de nodos</label>
+        <h1>{{totalNodos}}</h1>
+    </div>
+</div>
