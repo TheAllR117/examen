@@ -19,22 +19,22 @@ interface MenuItem {
 })
 export class SidemenuComponent {
 
-  templateMenu: MenuItem[] = [
-    {
-      texto: 'Básicos',
-      ruta: './template/basicos'
-    },
-    {
-      texto: 'Dinámicos',
-      ruta: './template/dinamicos'
-    },
-    {
-      texto: 'Switches',
-      ruta: './template/switches'
-    },
-  ];
+  // templateMenu: MenuItem[] = [
+  //   {
+  //     texto: 'Básicos',
+  //     ruta: './template/basicos'
+  //   },
+  //   {
+  //     texto: 'Dinámicos',
+  //     ruta: './template/dinamicos'
+  //   },
+  //   {
+  //     texto: 'Switches',
+  //     ruta: './template/switches'
+  //   },
+  // ];
 
-  reactiveMenu: MenuItem[] = [
+  templateMenu: MenuItem[] = [
     {
       texto: 'Básicos',
       ruta: './reactive/basicos'
